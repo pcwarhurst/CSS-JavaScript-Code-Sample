@@ -1,12 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-const AppWrapper = styled.body`
-  height: 110vh;
-  justify-content: center;
-  display: flex;
-`;
-
 const CSSBoxContainer = styled.div`
   height: 795px;
   border: 16px solid white;
@@ -102,19 +96,17 @@ const CSSBoxThree = styled(CSSBox)`
 
 const CssApp = () => {
   return (
-    <AppWrapper>
-      <CSSBoxContainer>
-        <CSSBoxOne>
-          <span>one</span>
-        </CSSBoxOne>
-        <CSSBoxTwo>
-          <span>two</span>
-        </CSSBoxTwo>
-        <CSSBoxThree>
-          <span>three</span>
-        </CSSBoxThree>
-      </CSSBoxContainer>
-    </AppWrapper>
+    <CSSBoxContainer>
+      <CSSBoxOne>
+        <span>one</span>
+      </CSSBoxOne>
+      <CSSBoxTwo>
+        <span>two</span>
+      </CSSBoxTwo>
+      <CSSBoxThree>
+        <span>three</span>
+      </CSSBoxThree>
+    </CSSBoxContainer>
   );
 };
 

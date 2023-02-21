@@ -1,16 +1,26 @@
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import React from "react";
 import CssApp from "./CssApp";
+import styled from "styled-components";
+import LandingPage from "./LandingPage";
+
+const AppWrapper = styled.body`
+  height: 110vh;
+  justify-content: center;
+  display: flex;
+`;
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/css" index element={<CssApp />} />
-        {/* <Route path="/javascript" element={<ProductsPage />} /> */}
-        <Route path="/" element={<Navigate to="/css" replace />} />
-      </Routes>
-    </BrowserRouter>
+    <AppWrapper>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" index element={<LandingPage />} />
+          <Route path="/css" element={<CssApp />} />
+          {/* <Route path="/javascript" element={<ProductsPage />} /> */}
+        </Routes>
+      </BrowserRouter>
+    </AppWrapper>
   );
 };
 
