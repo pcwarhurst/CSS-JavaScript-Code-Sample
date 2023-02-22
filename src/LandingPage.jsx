@@ -9,7 +9,7 @@ const WelcomeContainer = styled.div`
   flex-direction: column;
   font-family: Open Sans;
   font-size: 36px;
-  height: 300px;
+  height: 400px;
   width: 1000px;
   > :not(:last-child) {
     margin-bottom: 24px;
@@ -22,6 +22,7 @@ const LandingPage = () => {
       <h3>BIS Coding Challenge by Paul Warhurst</h3>
       <Link to="css"> CSS Challenge</Link>
       <Link to="javascript"> JavaScript Challenge</Link>
+      <div>Phone: 385-272-2696 --- email: pcwarhurst@gmail.com</div>
     </WelcomeContainer>
   );
 };
