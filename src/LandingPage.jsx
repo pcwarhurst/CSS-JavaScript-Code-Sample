@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const WelcomeContainer = styled.h1`
+const WelcomeContainer = styled.div`
   background: white;
   width: 1000px;
   height: 300px;
