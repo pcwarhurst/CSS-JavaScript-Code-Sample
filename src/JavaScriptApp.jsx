@@ -1,28 +1,20 @@
-import React from "react";
 import styled from "styled-components";
-import LotteryButton from "./LotteryButton";
+import LotteryGame from "./LotteryGame";
 
 const JSContainer = styled.div`
-  background: white;
-  width: 1000px;
-  height: 900px;
-
-  display: flex;
   align-items: center;
+  background: white;
+  display: flex;
   flex-direction: column;
+  height: 900px;
+  padding: 8px;
+  width: 1000px;
 `;
 
-const LotteryHeading = styled.h1`
-  font-family: Open Sans;
-  font-weight: 800;
-  font-size: 36px;
-  margin-bottom: 44px;
-`;
 const JavaScriptApp = () => {
   return (
     <JSContainer>
-      <LotteryHeading>The JavaScript Lottery</LotteryHeading>
-      <LotteryButton />
+      <LotteryGame />
     </JSContainer>
   );
 };

@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const WelcomeContainer = styled.div`
+  align-items: center;
   background: white;
-  width: 1000px;
-  height: 300px;
+  display: flex;
+  flex-direction: column;
   font-family: Open Sans;
   font-size: 36px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  height: 300px;
+  width: 1000px;
   > :not(:last-child) {
     margin-bottom: 24px;
   }
