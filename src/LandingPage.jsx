@@ -19,7 +19,7 @@ const WelcomeContainer = styled.div`
 const LandingPage = () => {
   return (
     <WelcomeContainer>
-      <h3>BIS Coding Challenge by Paul Warhurst</h3>
+      <h3>Coding Sample by Paul Warhurst</h3>
       <Link to="css"> CSS Challenge</Link>
       <Link to="javascript"> JavaScript Challenge</Link>
       <div>Phone: 385-272-2696 --- email: pcwarhurst@gmail.com</div>
